@@ -1,9 +1,7 @@
-<!-- Message for the Developer -->
-<!-- in the purpose of the KT~Knowlege Tranfer, Most of the section are short describe in all cases , that will going to help you understand & work efficient workflow... -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- This section is only for the Meta Tag Section -->
+    <!-- Meta Tag Section -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Petavala is an investing-centered company that strategically invests in financial services across various industries in the market.">
@@ -11,21 +9,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="robots" content="index, follow">
-    <base href="https://www.petavala.com/" target="_blank">
-    <!-- This is section for the meta base section -->
+    <base href="https://www.petavala.com/">
 
-
-    <!-- This section is only for the Title section  -->
+    <!-- Title Section -->
     <title>Petavala - Investing Centered Company </title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <!-- This is only for the Script section -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- This is only for the Style section  -->
+    <!-- Style Section -->
+    <style>
+        body {
+            padding-top: 56px; /* Adjust based on your navbar height */
+        }
 
+        .navbar {
+            border-radius: 0; /* No rounded corners for the navbar */
+        }
 
+        .navbar-brand {
+            font-size: 24px; /* Increase font size for the company name */
+            font-weight: bold;
+            margin-right: 20px; /* Adjust margin to move the company name a bit to the right */
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            border-radius: 25px; /* Rounded corners for the navigation links */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+            margin-left: 10px; /* Adjust margin to create space between navigation links */
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover {
+            background-color: #000; /* Black background on hover */
+            color: #fff; /* White text on hover */
+            font-size: 18px; /* Increase font size on hover */
+        }
+
+        .hero-section {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .featured-section {
+            padding: 50px 0;
+        }
+    </style>
 </head>
 <body>
-        
+    
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">Petavala</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="investment.html">Investments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="partners.html">Partners</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="newsroom.html">Newsroom</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="career.html">Career</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Welcome to Petavala</h1>
+        <p>Your Gateway to Smart Investments</p>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <div class="container">
+            <h2>Featured Investments</h2>
+            <div class="row">
+                <!-- Investment Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="investment1.jpg" class="card-img-top" alt="Investment 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Investment 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Investment Card 2 (Add more as needed) -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="investment2.jpg" class="card-img-top" alt="Investment 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Investment 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and jQuery (Make sure to include these scripts) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
