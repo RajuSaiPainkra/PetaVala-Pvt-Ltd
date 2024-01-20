@@ -94,10 +94,10 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            background-color: #e3d9d8; /* Set background color for the bottom navigation */
             text-align: center;
             padding: 10px 0;
             color: #000;
+            display: none; /* Initially hide the bottom navigation */
         }
     </style>
 </head>
@@ -138,6 +138,228 @@
         <h1>Welcome to Petavala</h1>
         <p>Your Gateway to Smart Investments</p>
     </section>
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>kdfkj</p>
+
+
+
+
+
+
+    </pre>
 
     <!-- Featured Section -->
     <section class="featured-section">
@@ -179,5 +401,18 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Show the bottom navigation when scrolled to the bottom
+        document.addEventListener("DOMContentLoaded", function() {
+            var bottomNav = document.querySelector('.bottom-nav');
+            window.addEventListener('scroll', function() {
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                    bottomNav.style.display = 'block';
+                } else {
+                    bottomNav.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
